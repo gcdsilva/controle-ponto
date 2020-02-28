@@ -38,7 +38,7 @@ public class PontoService {
 				entrada = ponto.getDataMarcacao().getTime();
 			}else {
 				saida = ponto.getDataMarcacao().getTime();
-				total += (entrada - saida) / 3600000;
+				total += (saida - entrada) / 3600000;
 			}
 		} 
 		
