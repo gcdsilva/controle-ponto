@@ -5,8 +5,10 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+
+import br.com.controle.ponto.enums.TipoMarcacaoEnum;
 
 @Entity
 public class Ponto {
@@ -15,14 +17,13 @@ public class Ponto {
 	@GeneratedValue
 	private Long id;
 
-	@NotNull
-	@Size(min = 1, max = 120)
+	@ManyToOne(optional = true)
 	private Usuario usuario;
 
 	@NotNull
 	private Date dataMarcacao;
 
-	private String tipoMarcacao;
+	private TipoMarcacaoEnum tipoMarcacao;
 
 	public Long getId() {
 		return id;
@@ -48,12 +49,12 @@ public class Ponto {
 		this.dataMarcacao = dataMarcacao;
 	}
 
-	public String getTipoMarcacao() {
+	public TipoMarcacaoEnum getTipoMarcacao() {
 		return tipoMarcacao;
 	}
 
-	public void setTipoMarcacao(String tipoMarcacao) {
+	public void setTipoMarcacao(TipoMarcacaoEnum tipoMarcacao) {
 		this.tipoMarcacao = tipoMarcacao;
 	}
-	
+
 }
