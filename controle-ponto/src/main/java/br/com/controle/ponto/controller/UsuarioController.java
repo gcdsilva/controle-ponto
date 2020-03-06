@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.controle.ponto.entity.Usuario;
-import br.com.controle.ponto.service.impl.UsuarioService;
+import br.com.controle.ponto.service.UsuarioService;
 
 @RestController
 @RequestMapping("/usuarios")

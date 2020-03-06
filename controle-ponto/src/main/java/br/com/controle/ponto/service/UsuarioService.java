@@ -1,4 +1,4 @@
-package br.com.controle.ponto.service.impl;
+package br.com.controle.ponto.service;
 
 import java.util.List;
 import java.util.Optional;

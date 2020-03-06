@@ -1,4 +1,4 @@
-package br.com.controle.ponto.service.impl;
+package br.com.controle.ponto.service;
 
 import java.util.ArrayList;
 import java.util.List;

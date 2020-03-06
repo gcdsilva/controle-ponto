@@ -31,6 +31,19 @@ public class Usuario {
 	@NotNull
 	private Date dataCadastro;
 
+
+	public Usuario(Long id, @NotNull String nome, @NotNull @Size(min = 11, max = 11) String cpf, @NotNull String email,
+			@NotNull Date dataCadastro) {
+		this.id = id;
+		this.nome = nome;
+		this.cpf = cpf;
+		this.email = email;
+		this.dataCadastro = dataCadastro;
+	}
+
+	public Usuario() {
+	}
+
 	public Long getId() {
 		return id;
 	}

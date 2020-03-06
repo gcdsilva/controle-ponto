@@ -25,6 +25,16 @@ public class Ponto {
 
 	private TipoMarcacaoEnum tipoMarcacao;
 
+	public Ponto(Long id, Usuario usuario, @NotNull Date dataMarcacao, TipoMarcacaoEnum tipoMarcacao) {
+		this.id = id;
+		this.usuario = usuario;
+		this.dataMarcacao = dataMarcacao;
+		this.tipoMarcacao = tipoMarcacao;
+	}
+
+	public Ponto() {
+	}
+
 	public Long getId() {
 		return id;
 	}

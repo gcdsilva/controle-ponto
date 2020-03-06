@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.controle.ponto.entity.Ponto;
-import br.com.controle.ponto.service.impl.PontoService;
+import br.com.controle.ponto.service.PontoService;
 
 @RestController
 @RequestMapping("/ponto")
